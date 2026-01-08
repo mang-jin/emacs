@@ -1,3 +1,6 @@
+; #65f02e
+(require 'multiple-cursors)
+
 (load-file "~/.emacs.d/odin-mode.el")
 (setq treesit-language-source-alist '((odin "https://github.com/tree-sitter-grammars/tree-sitter-odin")))
 
@@ -42,9 +45,10 @@
 (setq compile-command "./build.sh")
 
 (global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "C-,") #'indent-rigidly-left-to-tab-stop)
-(global-set-key (kbd "C-.") #'indent-rigidly-right-to-tab-stop)
 
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->")         'mc/mark-next-like-this)
+(global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -52,7 +56,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("7a201d66bc548dd583bfc521829c3b7ea678cbee42683f6da9454c736afaf92a"
+   '("df94467acfe1beb77b00e30e7339f6b49ef84b427eb32d6f949106a26ecd7a17"
+     "7a201d66bc548dd583bfc521829c3b7ea678cbee42683f6da9454c736afaf92a"
      "c0b8ab31bf5d202ea9fd9a8a44f4804b13be3120c80a8635c19ead8ec306ebfd"
      "0e50182d12992997697cece28b602358c98401afd9ee4332f9477d4e935d906a"
      "f236d9f28ac29ecdf36ba062ae20b537e473482c36cbfea4772edbedacfd6a14"
@@ -81,7 +86,8 @@
      "21d4c31e291322568ef557f3d870d7dd5b41d40d9077daf852a0e6c71229d583"
      "10fa8f3677ae4dba44c8a790a85aad6d7b8be729958d8ac7b80b211e8bb7cc50"
      "70e274e655ae570c69f22383c5ed224b4714a81614d094e55806079f5567fcc4"
-     default)))
+     default))
+ '(package-selected-packages '(multiple-cursors)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -89,3 +95,24 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
+
+(defun my/centered-startup-buffer ()
+  (let ((buf (get-buffer-create "*hello*")))
+    (with-current-buffer buf
+      (erase-buffer)
+
+      ;; 세로 중앙 정렬
+      (let* ((msg "Hello, Emacs!")
+             (lines (count-lines (point-min) (point-max)))
+             (vpad (/ (- (window-body-height) 1) 2)))
+        (insert (make-string (max 0 vpad) ?\n))
+
+        ;; 가로 중앙 정렬
+        (let* ((hpad (/ (- (window-body-width) (string-width msg)) 2)))
+          (insert (make-string (max 0 hpad) ?\s) msg)))
+
+      (goto-char (point-min)))
+    buf))
+
+(setq inhibit-startup-screen t)
+(setq initial-buffer-choice #'my/centered-startup-buffer)
