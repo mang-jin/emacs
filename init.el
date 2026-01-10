@@ -111,7 +111,7 @@
         (let* ((hpad (/ (- (window-body-width) (string-width msg)) 2)))
           (insert (make-string (max 0 hpad) ?\s) msg)))
 
-      (goto-char (point-min)))
+      (goto-char (point-max)))
     buf))
 
 (setq inhibit-startup-screen t)
