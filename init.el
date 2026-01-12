@@ -45,6 +45,7 @@
 (setq compile-command "./build.sh")
 
 (global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "C-x C-p") 'find-file-at-point)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
