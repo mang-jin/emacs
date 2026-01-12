@@ -41,6 +41,7 @@
 (setq indent-line-function 'insert-tab)
 (put 'upcase-region 'disabled nil)
 (setq c-basic-offset 8)
+(setq python-indent-offset 8)
 (setq js-indent-level 8)
 (setq compile-command "./build.sh")
 
