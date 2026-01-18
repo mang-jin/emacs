@@ -61,7 +61,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("edb0a4f55a7f188c750108aa0bfc61f67afab59ef73623f17a079d52cadf8ddb"
+   '("9b61223c36041652ebf17c461ef6927978a580e5cd91eb08fef4103b3bbbaa40"
+     "fc4ff6a34b1ed3913acf2d2dc3c2cbc68129b75b31958ae169148966ce121dd9"
+     "edb0a4f55a7f188c750108aa0bfc61f67afab59ef73623f17a079d52cadf8ddb"
      "69b4cfd0ec6f6a57f8e8566dcc86615783194935fa5e753c3db9c6fc40d78634"
      "762f0b1370ac4d2133f62c7e10d7ef6c5230b204215e110c7256d4ee5e33244c"
      "4069f9d9102ac3e89e0f42540b063c6bcc9af9955d56b9ba082e5a3e4a1144c8"
