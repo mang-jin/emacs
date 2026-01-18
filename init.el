@@ -4,6 +4,8 @@
 (load-file "~/.emacs.d/odin-mode.el")
 (setq treesit-language-source-alist '((odin "https://github.com/tree-sitter-grammars/tree-sitter-odin")))
 
+(load-file "~/.emacs.d/nasm-mode.el")
+
 (setq default-input-method "korean-hangul")
 (global-set-key (kbd "<S-SPC>") 'toggle-input-method)
 
@@ -28,6 +30,7 @@
 ;; (add-to-list 'auto-mode-alist '("\\.js\\'" . text-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.h\\'" . text-mode))
 (add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-ts-mode))
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . nasm-mode))
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
@@ -58,7 +61,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("df94467acfe1beb77b00e30e7339f6b49ef84b427eb32d6f949106a26ecd7a17"
+   '("edb0a4f55a7f188c750108aa0bfc61f67afab59ef73623f17a079d52cadf8ddb"
+     "69b4cfd0ec6f6a57f8e8566dcc86615783194935fa5e753c3db9c6fc40d78634"
+     "762f0b1370ac4d2133f62c7e10d7ef6c5230b204215e110c7256d4ee5e33244c"
+     "4069f9d9102ac3e89e0f42540b063c6bcc9af9955d56b9ba082e5a3e4a1144c8"
+     "61bbdd4c4f62235aca4ab0e67bd3e7ed16c3413c1b1e3efba2f77bda1ea26681"
+     "df94467acfe1beb77b00e30e7339f6b49ef84b427eb32d6f949106a26ecd7a17"
      "7a201d66bc548dd583bfc521829c3b7ea678cbee42683f6da9454c736afaf92a"
      "c0b8ab31bf5d202ea9fd9a8a44f4804b13be3120c80a8635c19ead8ec306ebfd"
      "0e50182d12992997697cece28b602358c98401afd9ee4332f9477d4e935d906a"
