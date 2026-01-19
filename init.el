@@ -30,7 +30,7 @@
 ;; (add-to-list 'auto-mode-alist '("\\.js\\'" . text-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.h\\'" . text-mode))
 (add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-ts-mode))
-(add-to-list 'auto-mode-alist '("\\.asm\\'" . nasm-mode))
+(add-to-list 'auto-mode-alist '("\\.s\\'" . nasm-mode))
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
