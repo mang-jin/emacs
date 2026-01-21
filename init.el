@@ -107,24 +107,3 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
-
-(defun my/centered-startup-buffer ()
-  (let ((buf (get-buffer-create "*hello*")))
-    (with-current-buffer buf
-      (erase-buffer)
-
-      ;; 세로 중앙 정렬
-      (let* ((msg "Hello, Emacs!")
-             (lines (count-lines (point-min) (point-max)))
-             (vpad (/ (- (window-body-height) 1) 2)))
-        (insert (make-string (max 0 vpad) ?\n))
-
-        ;; 가로 중앙 정렬
-        (let* ((hpad (/ (- (window-body-width) (string-width msg)) 2)))
-          (insert (make-string (max 0 hpad) ?\s) msg)))
-
-      (goto-char (point-max)))
-    buf))
-
-(setq inhibit-startup-screen t)
-(setq initial-buffer-choice #'my/centered-startup-buffer)
