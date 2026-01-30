@@ -5,6 +5,7 @@
 (setq treesit-language-source-alist '((odin "https://github.com/tree-sitter-grammars/tree-sitter-odin")))
 
 (load-file "~/.emacs.d/nasm-mode.el")
+(load-file "~/.emacs.d/simpc-mode.el")
 
 (setq default-input-method "korean-hangul")
 (global-set-key (kbd "<S-SPC>") 'toggle-input-method)
@@ -31,6 +32,7 @@
 ;; (add-to-list 'auto-mode-alist '("\\.h\\'" . text-mode))
 (add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-ts-mode))
 (add-to-list 'auto-mode-alist '("\\.s\\'" . nasm-mode))
+(add-to-list 'auto-mode-alist '("\\.c\\'" . simpc-mode))
 
 (setq auto-save-default nil)
 (setq make-backup-files nil)
@@ -50,6 +52,7 @@
 
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-x C-p") 'find-file-at-point)
+(global-set-key (kbd "C-c C-d") 'duplicate-dwim)
 
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
