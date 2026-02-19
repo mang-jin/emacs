@@ -1,0 +1,37 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil
+)
+(setq url-cookie-secure-storage
+ '(("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "07-Feb-2026"
+              "Wed, 11 Mar 2026 00:00:00 GMT" "/" "en.wikipedia.org" t])
+ ("youtube.com"
+  [url-cookie "__Secure-ROLLOUT_TOKEN"
+              "CIHG-4-IkL7KIBD9lvSEnceSAxio7-GPvNCSAw%3D%3D"
+              "Mon, 10-Aug-2026 03:13:35 GMT" "/" "youtube.com" t])
+ (".youtube.com"
+  [url-cookie "VISITOR_PRIVACY_METADATA" "CgJLUhIEGgAgbA%3D%3D"
+              "Mon, 10-Aug-2026 03:13:55 GMT" "/" ".youtube.com" t]
+  [url-cookie "VISITOR_INFO1_LIVE" "k3i-9YMeJ7g"
+              "Mon, 10-Aug-2026 03:13:55 GMT" "/" ".youtube.com" t]
+  [url-cookie "__Secure-YNID"
+              "15.YT=LaBGwOUTwq0TwKRJtG6FcbdTz6CmVu6lRmqoAiEqSC165tbi9D_FNx4_bd0FwqzheU7YcjMI5bD34f2cFygfO2BVFnF9A1LU7q9IZqzybDiQJEN6AwLlR-lNBlrKDG6gu3RMAT01nUrN_4OHYHcOvymP6Au6WmEs5kHaZt7JRKuHT1oRTm7S5DAiaTvdwsrKP5-RajlABtboLr8_Lqv9HDaFGMEtyP5vapCol5uMsHe0_tTVgIs11__Cr5nN11PKSqiF4CM2ixVGWze-TNvbia_pjl-8JSYamt4Cfjf0sPhaNYiXh24Zxcz0Yexipk-ouNd7N85al0sJa7b04f4xuw"
+              "Thu, 06-Aug-2026 11:00:33 GMT" "/" ".youtube.com" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Uniq"
+              "w8DdM_raucdcM84V73QemwMAAAEBAFvdhfQxEg4EnRaQ0dpgywo2dAv00U7vtWfG"
+              "Sun, 07 Feb 2027 00:00:00 GMT" "/" ".wikipedia.org" t]
+  [url-cookie "WMF-Last-Access-Global" "07-Feb-2026"
+              "Wed, 11 Mar 2026 00:00:00 GMT" "/" ".wikipedia.org" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; coding: utf-8-emacs-unix
+;; End:
+
+;;; cookies ends here

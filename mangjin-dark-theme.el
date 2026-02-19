@@ -3,7 +3,7 @@
 
 (custom-theme-set-faces
  'mangjin-dark
- '(cursor ((t (:background "#65f02e"))))
+ '(cursor ((t (:background "#32a852"))))
  '(fixed-pitch ((t (:family "Iosevka"))))
  '(variable-pitch ((t (:family "Iosevka"))))
  '(escape-glyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
@@ -17,7 +17,7 @@
  '(font-lock-builtin-face ((t (:foreground "#aaaaaa"))))
  '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
  '(font-lock-comment-face ((t (:foreground "#b09b8d"))))
- '(font-lock-keyword-face ((t (:foreground "#65f02e" :weight bold))))
+ '(font-lock-keyword-face ((t (:foreground "#32a852" :weight bold))))
  '(font-lock-preprocessor-face ((t (:inherit font-lock-builtin-face))))
  '(font-lock-string-face ((t (:foreground "#f0c941"))))
  '(font-lock-type-face ((t (:foreground "#999999"))))
@@ -41,7 +41,7 @@
  '(font-lock-function-name-face ((t nil)))
  '(font-lock-variable-name-face ((t nil)))
  '(font-lock-constant-face ((t nil)))
- '(line-number-current-line ((t (:inherit line-number :foreground "#65f02e" :weight bold))))
+ '(line-number-current-line ((t (:inherit line-number :foreground "#32a852" :weight bold))))
  '(default ((t (:inherit nil :extend nil :stipple nil :background "#232423" :foreground "#CFCFCF" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight regular :height 158 :width normal :foundry "ARRW" :family "Iosevka")))))
 
 (provide-theme 'mangjin-dark)
