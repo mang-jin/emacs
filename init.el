@@ -2,6 +2,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org") t)
 (package-initialize)
 
+(setq dired-dwim-target t)
+
 ; #65f02e
 (require 'multiple-cursors)
 

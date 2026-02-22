@@ -10,8 +10,11 @@
         kill-region
         kmacro-end-or-call-macro
         mark-sexp
+        upcase-region
+        wdired--self-insert
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        mouse-set-region
         ))

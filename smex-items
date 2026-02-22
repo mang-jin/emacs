@@ -1,0 +1,25 @@
+
+;; ----- smex-history -----
+(
+ capitalize-dwim
+ align-regexp
+ split-window-vertically
+ eval-buffer
+ compile
+ capitalize-region
+ help
+)
+
+;; ----- smex-data -----
+(
+ (duplicate-dwim . 1)
+ (help . 4)
+ (eval-buffer . 11)
+ (simpc-mode . 10)
+ (capitalize-region . 1)
+ (compile . 1)
+ (split-window-vertically . 1)
+ (dired-do-symlink . 8)
+ (align-regexp . 1)
+ (capitalize-dwim . 3)
+)
