@@ -17,13 +17,11 @@
 (global-set-key (kbd "<S-SPC>") 'toggle-input-method)
 
 (load-theme 'gruvbox-dark-medium t)
-(set-face-background 'fringe (face-background 'default)) ; 테두리 배경
+;; (set-face-background 'fringe (face-background 'default)) ; 테두리 배경
 
-(set-face-attribute 'line-number nil :inherit 'default)
-(set-face-attribute 'line-number-current-line nil :inherit 'default)
-
-;; (set-face-attribute 'mode-line nil :height 0.75)
-;; (set-face-attribute 'mode-line-inactive nil :height 0.75)
+;; set transparency
+(add-to-list 'default-frame-alist '(alpha-background . 97))
+(set-frame-parameter nil 'alpha-background 97)
 
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -133,3 +131,6 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
+
+(set-frame-parameter (selected-frame) 'alpha '(85 85))
+(add-to-list 'default-frame-alist '(alpha 85 85))
