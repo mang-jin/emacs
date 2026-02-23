@@ -4,6 +4,8 @@
 
 (setq dired-dwim-target t)
 
+(setq dired-listing-switches "-alh")
+
 ; #65f02e
 (require 'multiple-cursors)
 

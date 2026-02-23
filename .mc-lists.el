@@ -6,10 +6,13 @@
         c-electric-delete-forward
         delete-horizontal-space
         electric-newline-and-maybe-indent
+        end-of-buffer
         indent-for-tab-command
         kill-region
         kmacro-end-or-call-macro
         mark-sexp
+        move-text-down
+        move-text-up
         upcase-region
         wdired--self-insert
         ))
