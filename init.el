@@ -22,8 +22,8 @@
 ;; (set-face-background 'fringe (face-background 'default)) ; 테두리 배경
 
 ;; set transparency
-(add-to-list 'default-frame-alist '(alpha-background . 97))
-(set-frame-parameter nil 'alpha-background 97)
+(add-to-list 'default-frame-alist '(alpha-background . 95))
+(set-frame-parameter nil 'alpha-background 95)
 
 (menu-bar-mode -1)
 (toggle-scroll-bar -1)
@@ -50,15 +50,17 @@
 
 (setq display-line-numbers-type 'relative)
 (global-display-line-numbers-mode)
+(set-face-attribute 'line-number nil :inherit 'default)
+(set-face-attribute 'line-number-current-line nil :inherit 'line-number)
 
 ;; (setq-default indent-tabs-mode t)
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 8)
+(setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
 (put 'upcase-region 'disabled nil)
-(setq c-basic-offset 8)
-(setq python-indent-offset 8)
-(setq js-indent-level 8)
+(setq c-basic-offset 4)
+(setq python-indent-offset 4)
+(setq js-indent-level 4)
 (setq compile-command "./build.sh")
 
 (require 'smex)

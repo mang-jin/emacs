@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ whitespace-mode
  eval-buffer
  compile
  shell-command
  capitalize-dwim
  align-regexp
  split-window-vertically
- capitalize-region
 )
 
 ;; ----- smex-data -----
 (
  (duplicate-dwim . 1)
  (help . 4)
- (eval-buffer . 12)
+ (eval-buffer . 13)
  (simpc-mode . 10)
  (capitalize-region . 1)
  (compile . 2)
@@ -23,4 +23,5 @@
  (align-regexp . 1)
  (capitalize-dwim . 3)
  (shell-command . 2)
+ (whitespace-mode . 2)
 )
