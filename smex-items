@@ -1,27 +1,31 @@
 
 ;; ----- smex-history -----
 (
- whitespace-mode
  eval-buffer
+ package-refresh-contents
+ use-package-lint
+ package-install
  compile
- shell-command
- capitalize-dwim
- align-regexp
- split-window-vertically
+ mkdir
+ whitespace-mode
 )
 
 ;; ----- smex-data -----
 (
  (duplicate-dwim . 1)
  (help . 4)
- (eval-buffer . 13)
+ (eval-buffer . 17)
  (simpc-mode . 10)
  (capitalize-region . 1)
- (compile . 2)
+ (compile . 3)
  (split-window-vertically . 1)
  (dired-do-symlink . 8)
  (align-regexp . 1)
  (capitalize-dwim . 3)
  (shell-command . 2)
  (whitespace-mode . 2)
+ (mkdir . 1)
+ (package-install . 2)
+ (use-package-lint . 1)
+ (package-refresh-contents . 4)
 )
