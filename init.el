@@ -63,6 +63,9 @@
 (setq js-indent-level 4)
 (setq compile-command "./build.sh")
 
+(setq split-height-threshold 0)
+(setq split-width-threshold nil)
+
 (require 'smex)
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
