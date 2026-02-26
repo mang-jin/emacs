@@ -10,6 +10,7 @@
         indent-for-tab-command
         kill-region
         kmacro-end-or-call-macro
+        kmacro-start-macro-or-insert-counter
         mark-sexp
         move-text-down
         move-text-up
