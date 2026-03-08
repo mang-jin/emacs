@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
- eval-buffer
  query-replace
+ mkdir
+ customize-option
+ replace-regexp
  compile
- whitespace-mode
- whitespace-cleanup
- help
- how-many
+ simpc-mode
+ read-only-mode
 )
 
 ;; ----- smex-data -----
 (
  (duplicate-dwim . 1)
  (help . 6)
- (eval-buffer . 19)
- (simpc-mode . 10)
+ (eval-buffer . 25)
+ (simpc-mode . 12)
  (capitalize-region . 1)
- (compile . 13)
+ (compile . 45)
  (split-window-vertically . 1)
  (dired-do-symlink . 8)
- (align-regexp . 1)
+ (align-regexp . 10)
  (capitalize-dwim . 3)
  (shell-command . 2)
  (whitespace-mode . 4)
- (mkdir . 1)
+ (mkdir . 20)
  (package-install . 2)
  (use-package-lint . 1)
  (package-refresh-contents . 4)
@@ -32,6 +32,14 @@
  (what-cursor-position . 1)
  (describe-character-set . 1)
  (how-many . 3)
- (query-replace . 9)
+ (query-replace . 14)
  (whitespace-cleanup . 1)
+ (package-delete . 1)
+ (set-buffer-file-coding-system . 1)
+ (revert-buffer . 2)
+ (set-goal-column . 2)
+ (customize-option . 4)
+ (align . 2)
+ (read-only-mode . 1)
+ (replace-regexp . 2)
 )

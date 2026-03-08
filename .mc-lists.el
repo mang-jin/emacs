@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        align-regexp
         c-electric-delete-forward
         delete-horizontal-space
         electric-newline-and-maybe-indent
