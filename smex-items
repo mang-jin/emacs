@@ -1,12 +1,12 @@
 
 ;; ----- smex-history -----
 (
- query-replace
- mkdir
- customize-option
- replace-regexp
+ whitespace-mode
+ eval-buffer
+ count-words
  compile
- simpc-mode
+ eww
+ xref-find-definitions
  read-only-mode
 )
 
@@ -14,17 +14,17 @@
 (
  (duplicate-dwim . 1)
  (help . 6)
- (eval-buffer . 25)
+ (eval-buffer . 33)
  (simpc-mode . 12)
  (capitalize-region . 1)
- (compile . 45)
+ (compile . 55)
  (split-window-vertically . 1)
  (dired-do-symlink . 8)
  (align-regexp . 10)
  (capitalize-dwim . 3)
  (shell-command . 2)
- (whitespace-mode . 4)
- (mkdir . 20)
+ (whitespace-mode . 11)
+ (mkdir . 25)
  (package-install . 2)
  (use-package-lint . 1)
  (package-refresh-contents . 4)
@@ -40,6 +40,12 @@
  (set-goal-column . 2)
  (customize-option . 4)
  (align . 2)
- (read-only-mode . 1)
+ (read-only-mode . 2)
  (replace-regexp . 2)
+ (dired-toggle-read-only . 1)
+ (find-tag . 4)
+ (xref-find-definitions . 5)
+ (count-words . 4)
+ (eww . 3)
+ (rc/set-up-whitespace-handling . 2)
 )

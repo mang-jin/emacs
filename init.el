@@ -11,7 +11,6 @@
 (setq dired-listing-switches "-alh")
 
 ; #65f02e
-(require 'multiple-cursors)
 
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
@@ -97,6 +96,7 @@
 (global-set-key (kbd "C-x C-p") 'find-file-at-point)
 (global-set-key (kbd "C-c C-d") 'duplicate-dwim)
 
+(require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->")         'mc/mark-next-like-this)
 (global-set-key (kbd "C-<")         'mc/mark-previous-like-this)
@@ -151,7 +151,7 @@
      "10fa8f3677ae4dba44c8a790a85aad6d7b8be729958d8ac7b80b211e8bb7cc50"
      "70e274e655ae570c69f22383c5ed224b4714a81614d094e55806079f5567fcc4"
      default))
- '(package-selected-packages '(gruvbox-theme memoize move-text multiple-cursors smex))
+'(package-selected-packages '(gruvbox-theme memoize move-text multiple-cursors smex))
  '(revert-buffer-quick-short-answers t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -161,5 +161,18 @@
  )
 (put 'downcase-region 'disabled nil)
 
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+(require 'whitespace)
+
+(custom-set-variables
+ '(whitespace-style
+   (quote
+    (face tabs spaces trailing space-before-tab newline indentation empty space-after-tab space-mark tab-mark))))
+(set-face-attribute 'whitespace-space nil :background nil :foreground "#3f3f3f")
+
+(defun rc/set-up-whitespace-handling ()
+  (interactive)
+  (whitespace-mode 1)
+  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+
+(add-hook 'simpc-mode-hook 'rc/set-up-whitespace-handling)
+
